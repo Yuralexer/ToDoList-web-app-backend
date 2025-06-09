@@ -1,0 +1,13 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "django>=5.2.2",
+    "django-cors-headers>=4.7.0",
+    "djangorestframework-simplejwt>=5.5.0",
+    "isort>=6.0.1",
+    "ruff>=0.11.13",
+]
