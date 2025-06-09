@@ -42,8 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
-    "rest_framework",
-    "rest_framework_sipmlejwt",
+    "rest_framework_simplejwt",
     "corsheaders" # Лучше использовать Docker-compose для взаимодейстивя между двумя серверами в рамках одной машины
 ] + default_config["APPS"] # Впишите ваши Django-приложения в config.default.json
 
@@ -136,7 +135,7 @@ CORS_ALLOWED_ORIGINS = local_config["CORS_ALLOWED_ORIGINS"]
 
 CORS_ALLOW_CREDENTIALS = True
 
-AUTH_USER_MODEL = ""
+AUTH_USER_MODEL = "users.User"
 
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
